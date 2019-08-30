@@ -590,7 +590,15 @@ a {
 
 
 
-
+.wrapper {
+    flex-basis: 50%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.step {
+  scroll-snap-align: start;
+}
 
 
 
@@ -630,6 +638,15 @@ a {
     font-size: 14px;
     line-height: 26px;
   }
+
+.wrapper {
+    flex-basis: 50%;
+    overflow-y: scroll;
+    scroll-snap-type: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -640,11 +657,7 @@ a {
     min-width: 500px;
     margin-top: 0px;
   }
-  .rachel-mersky {
-    width: 248px;
-    height: 46px;
-    background-size: auto 50px;
-  }
+
   .heading-one {
     font-size: 30px;
     line-height: 38px;
@@ -662,30 +675,17 @@ a {
     text-align: center;
   }
   .step {
-    height: 90vh;
+    min-height: 100vh;
+    margin-bottom: 100px;
   }
   .column-18 {
     text-align: center;
   }
-  .past-work {
-    margin-bottom: 41px;
-    padding: 4px 4px 0px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 auto;
-    -ms-flex: 0 auto;
-    flex: 0 auto;
-  }
+
   .intro.step {
-    height: 90vh;
+    height: 100vh;
   }
-  .div-block.sup {
-    min-height: 250px;
-    min-width: 300px;
-    margin-top: 0px;
-  }
-  .project-copy {
-    padding: 20px;
-  }
+
   .content.center.intro {
     min-width: 300px;
     padding: 0px 30px;
@@ -695,35 +695,25 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  .rachel-mersky {
-    width: 248px;
-    height: 46px;
-    margin-top: 8px;
-    margin-bottom: -4px;
-    background-position: 0px -1px;
-    background-size: auto 50px;
-  }
-  .columns-2.project.section {
-    padding-right: 20px;
-    padding-left: 20px;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .heading-one {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .homebody {
-    font-size: 14px;
-    line-height: 26px;
-  }
-  .paragraph-2 {
-    margin-bottom: 24px;
-  }
+
   .app {
     max-width: 45px;
     margin-bottom: 20px;
   }
+
+.arrows {
+      top: 80vh;
+}
+
+.w-col-4 {
+    width: 33.33333333%;
+    }
+
+    .paragraph {
+      font-size: 16px;
+    }
+
+
+
 }
 
